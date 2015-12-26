@@ -18,7 +18,7 @@ I can tell you some case when I code my projects.the api for upload,you can work
         curl_setopt ( $ch, CURLOPT_POSTFIELDS, $fields );  
         curl_setopt ( $ch, CURLOPT_RETURNTRANSFER, 1 );  
         $response = curl_exec ( $ch );  " ,
-        but if your version is php 5.6 you will fail to upload with a error message "the media data missing!", so when you write your project whit a right code but can't work ,think over the version ,maybe it's the reason.
+        but if your version is php 5.6 you will fail to upload with a error message "the media data missing!", you need add a row code  'curl_setopt ( $ch, CURLOPT_SAFE_UPLOAD, false)',so when you write your project whit a right code but can't work ,think over the version ,maybe it's the reason.
         
         
   4.about token save 
@@ -38,4 +38,9 @@ for((i=0;i<60;i=(i+step)));do
 		$(php '/sky31/www/card.sky31.com/timer.php')
 		sleep $step
 done
-exit 0'
+exit 0
+
+'
+if you want a project for the voice card you also need konw how to merge two pictures,it 's the same to add logo in a image.
+in php you can use the function 'imagecopymerge'.
+that 's all ,i hope you can enjoy the project .
