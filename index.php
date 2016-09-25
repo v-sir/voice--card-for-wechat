@@ -246,7 +246,7 @@ class wechatCallbackapiTest
       // include "./cache/token.php";
       // $token=$Token['token'];
         $sql2="select* from token";
-        $conn2=new mysqli("localhost","root","NIUBSky3!.comr720","card");
+        $conn2=new mysqli("localhost","root","","card");
         $result2=$conn2->query($sql2);
         $row2=$result2->fetch_array();
         $token=$row2[1];
@@ -277,7 +277,7 @@ class wechatCallbackapiTest
         //include "./cache/token.php";
         // $token=$Token['token'];
         $sql2="select* from token";
-       $conn2=new mysqli("localhost","root","NIUBSky3!.comr720","card");
+       $conn2=new mysqli("localhost","root","","card");
         $result2=$conn2->query($sql2);
        $row2=$result2->fetch_array();
         $token=$row2[1];
